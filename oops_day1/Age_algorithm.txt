@@ -1,0 +1,5 @@
+step 1: Start
+step 2: Read number from user
+step 3: if number is equal to or greater than 18 print eligible for voting
+step 4: ele print not eligible for voting
+step 5: End

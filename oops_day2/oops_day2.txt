@@ -1,0 +1,74 @@
+     1.	Given an entity named Television, identify its attributes and explain how will you do Abstraction? 
+
+        Attributes:
+                1.Body
+                2.Screen
+                3.Processor
+                4.Io ports
+                5.Remote
+                6.Speaker
+                7.Memory unit
+                8.RAM
+
+                 Abstraction :   Processsor,Io ports,RAM and Memory unit are  Internally connected to Television.
+                                 Body,Screen,Speaker,Remote are Externally connected to Televsion.
+
+    2.	Given an entity named Hospital, explain Encapsulation with respect to it. 
+           
+         Hospital Management System:
+                         Patient
+                         Doctors: 
+                                //private
+                                 OPD doctor
+                                 Non-OPD doctor
+                                //public
+                    Management
+                              
+                 Encapsulation :Here,patient is related to data of a class
+                                Opd And Non Opd Doctors are related to public and private  members is an example of data encapsulation 
+
+    3.	Given an entity named TrafficSignal, explain Polymorphism with respect to it.           
+              
+         Polymorphism means one object many forms .
+         We all know that traffic signal helps in preventing accidents.
+
+                   Ex:   a person acts as an employee in the office, 
+                         a customer in the shopping mall, a passenger in bus/train, a student in school, and a son at home.
+                         same for trafficsignal it guides 3 diffrent signals(Red,Green,yellow).
+
+
+   4.	Given an entity named BroadBandConnection, explain inheritance with respect to it. 
+
+         Inheritance is used for acquiring class properties and behaviours into child class.
+                     
+                  Ex:  broadband connection has its own properties like connecting to several diffrent connection at a time .
+                       here child system means router,phones,pc  all are connected through wireless and wired conncetion.
+
+
+  5.	Given an entity named MobilePhone, identify its static & dynamic attributes. 
+         
+        Static attributes : Battery,SIM,USB,Screen guard,Camera,Mobilephone Body
+        Dynamic Attributes : Display,Processor,Memory,Storage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       

@@ -1,0 +1,14 @@
+begin
+numeric nNum rem
+display "Enter the number"
+accept nNum
+initialise rev=0
+while nNum >=1
+begin
+rem = nNum % 10
+rev = (10 * rev) + rem
+nNum = nNum / 10
+return rev
+end
+display "reverse digit is"
+end 

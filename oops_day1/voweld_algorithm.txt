@@ -1,0 +1,8 @@
+step1:start
+step2:store the string "aAeEiIoOuU" in a variable called vowels
+step3:Initialise count=0
+step4:store string "CITIUSTECH" in a variable string
+step5:Iterate for each value in string variable
+step6:If value in string variable matches with values in variable vowels then increase the count
+step7:Display the count
+step8:End

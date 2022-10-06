@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>username and paasword data</title>
+</head>
+<body>
+    Username : <input type="text" placeholder="Enter user name" id=name>
+    <br><br>
+    Password : <input type="password" placeholder="Enter password" id=password>
+    <br><br>
+    <input type="submit" value="sign in" onclick="Login()">
+    <br><br><br>
+    <h3 id='invalidMessege' style="color:black ;"></h3>
+
+    <script>
+        function Login() {
+            let username = document.getElementById('name').value;
+            let password = document.getElementById('password').value;
+            let invalidMessege = document.getElementById('invalidMessege');
+
+            if (username === 'citiustech' && password === 'citiustech') {
+                window.open('https://www.google.com/');
+            }
+            else {
+                invalidMessege.innerHTML = 'Invalid credentials <br>Username and Password';
+            }
+        }
+    </script>
+</body>
+</html>

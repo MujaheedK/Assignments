@@ -1,0 +1,11 @@
+begin
+   vowels="aAeEiIoOuU"
+   count=0
+   string="CITIUSTECH"
+   for s in string
+        begin
+           if s in vowels
+           count=count+1
+           display count 
+           end
+end

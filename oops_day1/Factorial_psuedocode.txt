@@ -1,0 +1,7 @@
+Input number
+Set factorial i :=1
+while i <= number Do
+Compute factorial := factorial * i
+Increase i by 1
+End loop
+print factorial

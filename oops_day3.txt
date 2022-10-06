@@ -1,0 +1,75 @@
+     1.	Given a class named Patient, identify what instance methods could be written in this class. 
+            
+       Instance methods :  
+                1.Create a profile for patient.
+                2.If created previously then ask for the ID.
+                3.Check which disease Patient has.
+                4.If he had same disease before then check his progress of that disease.
+                5.If scanning is required for that disease,then proceed with the scanning
+                6.If surgery is required then proceed with surgery operation.
+                7.If the surgery cures from medicines then proceed  with the medicines.
+
+     2.	Given a class named CPU, identify the public & private instance members.     
+        
+          Public :
+               1.Plugging in Pen drive to install some software, movies etc.
+               2.Inserting USB and HDMI cabels to  interface with other devices.
+               3.Inserting CD to play games,watching a movie etc...
+          
+          Private : 
+               1.CPU[Control Proceesing Unit]
+               2.It controls all the processing data and decodes all the data.
+               3.It has diffrent unit like RAM,Internal storage.
+               4.Design and Configuration.
+
+    3. Given a class named Media, assume there are 3 objects of this class. Identify the static members of this class. 
+          
+          Media has 3 diffrent objects 
+              1.Print
+              2.Broadcast
+              3.Social
+            1.Print media : If the data is  printed on the paper,we cannot edit because it is already printed.
+            2.Broadcast media : In this,the data which is telecasting live can't be changed.
+            3.Social : if the data sent to the social you an edit and delete .
+
+
+    4. Given a class named Calculator & its derived classes named Standard and Scientific, identify the method which can be overridden by the derived               classes. 
+
+           Calculator has its derived classes are Standard and Scientific
+           1.Standard Calculator can be overridden by the Scientific because it has only basic arithmetic operation.
+           2.Scientific Calculator are used for multiple operation like Matrix,Arithmetic and Exponential function etc..
+
+    5. Given the classes Bird, Superman, Aeroplane and Missile, identify the usage of interfaces here.
+
+       Bird,Superman,Aeroplane and Missile are belongs common functionalities for its child classes.
+       Here,the classes bird, superman, aeroplane and missile have the same functionality like flying, path, height at which it flies and fuel. 
+       But there way of flying, height at which they fly, paths and fuel type are different.
+       So we have to create flying interface and its definition is different for different classes 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+           

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+</head>
+<body>
+    <script>
+        function addEmailId(){
+
+let textField = document.createElement("input");
+textField.setAttribute("type","email");
+document.body.appendChild(textField);
+textField.placeholder="Enter your Email";
+
+let removeEmailbutton = document.createElement("input");
+removeEmailbutton.setAttribute("type","button");
+removeEmailbutton.value = "Remove Email";
+document.body.appendChild(removeEmailbut);
+
+removeEmailbutton.onclck=function(){
+    document.body.removeChild(textField);
+    document.body.removeChild(removeEmailbutton);
+}
+}
+    </script>
+</body>
+</html>

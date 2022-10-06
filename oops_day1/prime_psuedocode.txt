@@ -1,0 +1,14 @@
+begin
+numeric nNum,iter,
+display"enter the number"
+read nNum
+if nNum<=1
+Display "it is not prime"
+for iter in range of (2,nNum)
+       begin
+        if nNum%iter==0
+        display"It is not a  prime number"
+        else
+        display"It is a prime number"
+      end
+end

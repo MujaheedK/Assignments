@@ -1,0 +1,9 @@
+step 1: start
+step 2: Declare variable n,fact,i
+step 3: Read number from user
+step 4: Initialise variable fact=1 and i=1
+step 5: repeat until i<=number
+step 6: fact=fact*i
+step 7: i=i+1
+step 8: print fact
+step 9: stop 
