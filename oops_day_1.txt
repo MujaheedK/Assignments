@@ -1,0 +1,155 @@
+     1.	Write a pseudocode to determine whether a person is eligible to vote or not given his/her age. The voting eligibility criteria is that the person’s         age must be >= 18. 
+ 
+       Begin
+       Number age
+       Display "Enter age"
+       If age >= 18
+       Display "Eligible for voting"
+       Else
+       Display "Not Eligible for voting!"
+       End
+ 
+    */Write an algorithm for each pseudocode written in assignment 1.
+
+        step 1: Start
+        step 2: Read number from user
+        step 3: if number is equal to or greater than 18 print eligible for voting
+        step 4: ele print not eligible for voting
+        step 5: End 
+
+     2.	Write an algorithm to determine whether a number is a prime number or not. 
+
+      step 1: start
+      step 2: Input number from the user
+      step 3: Read number
+      step 4: If number <= 1
+      step 5: Display it is not a prime number. Else go to step 6
+      step 6: for iter in range(2,number)
+      step 7: if number%iter==0
+      step 8: Display it is not a prime number. Else go to step 9
+      step 9: Display it is a prime number
+      step10: End
+
+     */Write a pseudocode for each algorithm written in assignment 2
+    
+
+     begin
+     numeric nNum,iter,
+     display"enter the number"
+     read nNum
+     if nNum<=1
+     Display "it is not prime"
+     for iter in range of (2,nNum)
+       begin
+        if nNum%iter==0
+        display"It is not a  prime number"
+        else
+        display"It is a prime number"
+      end
+     end
+
+     3.	Write a pseudocode to reverse the digits of a number. 
+
+       begin
+       numeric nNum rem
+       display "Enter the number"
+       accept nNum
+       initialise rev=0
+       while nNum >=1
+       begin
+       rem = nNum % 10
+       rev = (10 * rev) + rem
+       nNum = nNum / 10
+       return rev
+       end
+       display "reverse digit is"
+       end
+
+
+      */Write an algorithm for each pseudocode written in assignment 3  
+
+       step1:start
+       step2:Input nNum from the user and declare a variable called rem
+       step3:Read nNum
+       step4:Initalise rev=0
+       step5:while nNum is greater than or equal to 1 go to step6 else go to step10
+       step6:calculate rem=nNum%10
+       step7:calculate rev=(10*rev)+rem
+       step8:compute nNum=nNum/10
+       step9:Return rev value
+       step10:Display the reverse digit,rev
+       step11:End
+
+
+
+     4.	Write an algorithm to find the factorial of a given number. 
+
+       step 1: start
+       step 2: Declare variable n,fact,i
+       step 3: Read number from user
+       step 4: Initialise variable fact=1 and i=1
+       step 5: repeat until i<=number
+       step 6: fact=fact*i
+       step 7: i=i+1
+       step 8: print fact
+       step 9: stop 
+
+      */Write a pseudocode for each algorithm written in assignment 4
+
+      Input number
+      Set factorial i :=1
+      while i <= number Do
+      Compute factorial := factorial * i
+      Increase i by 1
+      End loop
+      print factorial
+
+
+     5.	Write a pseudocode to count the number of vowels in the string CITIUSTECH. 
+
+      begin
+      vowels="aAeEiIoOuU"
+      count=0
+      string="CITIUSTECH"
+      for s in string
+        begin
+           if s in vowels
+           count=count+1
+           display count 
+           end
+       end
+
+
+      */Write an algorithm for each pseudocode written in assignment 5
+
+      step1:start
+      step2:store the string "aAeEiIoOuU" in a variable called vowels
+      step3:Initialise count=0
+      step4:store string "CITIUSTECH" in a variable string
+      step5:Iterate for each value in string variable
+      step6:If value in string variable matches with values in variable vowels then increase the count
+      step7:Display the count
+      step8:End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
