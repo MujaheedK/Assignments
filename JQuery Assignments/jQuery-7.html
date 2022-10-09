@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Assignment-7</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/resources/demo/style.css">
+
+    <style>
+        .ui-widget-header,
+        .ui-button,
+        .ui-state-default{
+            background-color: grey;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div style="height:100px; width:100px; background-color: rgb(184,184,120); padding:20px;">
+    <br>
+    <p><b>The Dialog</b></p>
+    <button id="d1">click me</button>
+</div>
+
+<div id="d1">Are you want to do this?</div>
+<script>
+    $(function(){
+        $('#d1').dialog({
+            autoOpen : false,
+         buttons: {
+            'Yes I do!': function (){ $(this).dialog("close")},
+                'NO':function() {}
+            },
+            title:"Attention!"
+         
+        });
+        $('#btn').click(function(){
+            $('#d1').dialog("open");
+        })
+
+    });
+</script>
+</body>
+</html>

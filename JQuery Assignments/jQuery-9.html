@@ -1,0 +1,52 @@
+<!-- 9.	Create an HTML5 page with the following: 
+a.	Add jQuery code that fades in the text I am a hidden secret whenever a button is clicked. 
+b.	Change your jQuery code so it slides down the text instead of fading it in. 
+c.	Change the button text to say Click me to toggle a hidden secret! and make the text toggle between fading in and out each time it is clicked.  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        #div3, #div2 {
+            padding: 5px;
+            text-align: center;
+            background-color: #e9f362;
+            border: solid 1px #1e1717;
+        }
+        #div3 {
+            padding: 50px;
+            background-color: #afdd64;
+            display: none;
+        }
+        #div4 {
+            padding: 10px;
+            background-color: #b95ac2;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>fadeIn....</h2>
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:rgb(107, 225, 240);padding: 20px;">
+        I am a hidden secret</div>
+    <button id="btn1">click here</button><br><br>
+    <h1>slidedown....</h1>
+    <div id="div2">click here to slidedown...</div>
+    <div id="div3">Virat Kohli is the best player in the world,He will score his 71st hundred in the upcoming world cup.</div><br><br>
+    <button id="btn2">click here</button><br><br>
+    <div id="div4">Click me to toggle a hidden secret! </div>
+    <script>
+        $('#btn1').click(function () {
+            $('#div1').fadeIn('slow');
+        });
+
+        $('#div2').click(function () {
+            $('#div3').slideDown('slow');
+        });
+
+        $('#btn2').click(function () {
+            $('#div4').toggle('slow');
+        });  
+    </script>
+</body>
+</html>

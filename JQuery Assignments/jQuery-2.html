@@ -1,0 +1,59 @@
+<!-- 2.	Create an HTML5 page as follows: 
+a.	Two empty <div> elements. The id of each must be div1 and div2 respectively. 
+b.	Two textboxes without ids. 
+c.	Two textareas without ids. 
+d.	A button titled Apply Style to TextBoxes. When this button is clicked, draw a red border around each textarea. 
+e.	A button titled Apply Style to first div . When this button is clicked, write some text only inside the first <div> element. 
+f.	A button titled Say Hello. When this button is clicked, each textbox and textarea must contain the text HELLO.  -->
+
+<!-- code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ASSIGNMENTS-2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <input type="text">
+    <br>
+
+    <input type="text">
+    <br>
+
+    <div id="div1">
+        <textarea rows="5" cols="100"></textarea>
+        <br>
+    </div>
+
+    <button type="button" id="btn"> Apply Style to TextBoxes</button>
+    <button type="button" id="btn1"> Apply Style to First div</button>
+    <button type="button" id="btn2">Say HELLO</button>
+
+     <script>
+        $(function() {
+            $('btn').click (function(){
+                $('textarea').css({"border": "solid 2px red"});
+            })
+        })
+
+    
+        $(function() {
+            $('btn1').click (function(){
+                
+            })
+        })
+
+    
+        $(function() {
+            $('btn2').click (function(){
+                $('textarea').text('Say Hello!');
+            })
+        })
+
+
+  </script>
+
+</body>
+</html>

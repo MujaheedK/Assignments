@@ -1,0 +1,32 @@
+<!-- 5.	Create an HTML5 page with the following: 
+<button id="clicker">Click me to hide the hidden secrets!</button> 
+<p class="secret">I am hidden secret #1.</p> 
+<p class="secret">I am hidden secret #2.</p> 
+<p class="secret">I am hidden secret #2.</p> 
+<p>I am <em>not</em> a hidden secret.</p> 
+ 
+Add jQuery code to modify the page so that when the user clicks the button, the paragraphs that start with the words I am a hidden secret slide up.  -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="clicker">Click me to hide the hidden secrets!</button>
+    <p class="secret">I am hidden secret #1.</p>
+    <p class="secret">I am hidden secret #2.</p>
+    <p class="secret">I am hidden secret #2.</p>
+    <p>I am <em>not</em> a hidden secret.</p>
+    
+    <script>
+        $('#clicker').click(function(){
+            $('.secret').slideUp();
+        });
+    </script>
+
+</body>
+
+</html>

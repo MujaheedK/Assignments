@@ -1,0 +1,41 @@
+<!-- Create an HTML5 page with a jQuery accordian  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment-8</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+        <link rel="stylesheet" href="/resources/demo/style.css">
+</head>
+<body>
+    <div style="background-color:aliceblue;padding:20px;padding-right: 0px;">
+    <h1>the accordian</h1>
+    <div id="acc">
+
+        <h1>C#</h1>
+        <div>
+            <p> C# is An object oriented Programing language</p>
+        </div>
+
+        <h1>LINQ</h1>
+        <div>
+            <p>LINQ is 'Language Integrated Query</p>
+        </div>
+
+        <h1>jquery UI</h1>
+        <div>
+            <p>Jquery is used as javascript library </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $('#acc').accordian();
+    })
+</script>
+</body>
+</html>
