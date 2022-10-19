@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<body>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script></head>
+<h1>AJAX GET request</h1>
+
+<button type="button" onclick="GetData()" >Request data</button>
+
+<select id="dropDown">
+</select>
+<ul id="bullet">
+  </ul> 
+
+<script>
+  function GetData(){
+  let dropdown = $('#dropDown');
+  let lists=$('#bullet');
+
+dropdown.empty();
+dropdown.append('<option selected="true" disabled>Choose title</option>');
+dropdown.prop('selectedIndex', 0);
+
+const url = 'https://jsonplaceholder.typicode.com/todos';
+$.getJSON(url, function (data) {
+  $.each(data, function (key, entry) {
+    if(entry.completed==true){
+           dropdown.append($('<option></option>').attr('value', entry.abbreviation).text(entry.title));
+    }else{
+        lists.append($('<li></li>').attr('value', entry.abbreviation).text(entry.title));
+    }
+  })
+});
+  };
+</script>
+
+</body>
+</html>

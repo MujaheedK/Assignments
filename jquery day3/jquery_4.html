@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <h1>AJAX Post request</h1>
+    <label for="search">Enter a user ID:</label>
+    <input type="text" id="usId" name="q" >
+    <br>
+    <label for="title-search">Enter the title</label>
+    <input type="text" id="txt" >
+    <br>
+    <label for="U">completed:</label>
+    <input type="checkbox" id="checkbox" value="false" />
+    <h3 id="display"></h3>
+
+    <br /><br />
+
+    <button onclick="getD()">Post details</button>
+    <br />
+
+    <script>
+      function getD() {
+        let comp = $("#checkbox").is(":checked") ? "true" : "false";
+        let uId = document.getElementById("usId").value;
+        let ttle = document.getElementById("txt").value;
+
+        const newUser = { ID: uId, title: ttle, checkbox: comp };
+        console.log(newUser);
+        $.ajax({
+          method: "POST",
+          url: "https://jsonplaceholder.typicode.com/todos",
+          data: newUser,
+        }).done(function (msg) {
+          document.getElementById("display").innerHTML = JSON.stringify(msg);
+        });
+      }
+    </script>
+  </body>
+</html>
